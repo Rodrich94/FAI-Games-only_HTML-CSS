@@ -1,0 +1,400 @@
+/* Propiedades que son aplicadas a toda la pagina */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Encabezado invisible (Ya que nuestro encabezado es una imagen) */
+#encabezado{
+  display:none;
+}
+
+/* Texto de FB invisible (Ya que existian dos enlaces con el mismo texto pero diferentes destinos) */
+#textoFB{
+  display: none;
+}
+
+/* Texto de TW invisible (Ya que existian dos enlaces con el mismo texto pero diferentes destinos) */
+#textoTwitter{
+  display: none;
+}
+
+/* Propiedades definidas sobre el body de la pagina */
+body{
+  background: linear-gradient(
+    rgba(130, 51, 122, 0.8),
+    rgba(91, 38, 85, 1)
+    );
+}
+
+/* Propiedades definidas sobre el contenedor de toda la pagina */
+#container{
+  display: flex;
+  position: relative;
+}
+
+/* Propiedades definidas sobre el menu que se encuentra dentro del contenedor de la pagina */
+#container nav{
+  font-family: 'Bowlby One SC', cursive;
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(34, 33, 33, 1),
+    rgba(110, 1, 99, 0.8)
+    );
+  padding: 2% 0;
+}
+
+/* Propiedades definidas sobre la imagen del menu */
+#container nav .menu-bar img{
+  padding-left: 3%;
+  padding-bottom: 3%;
+  width: 98%;
+}
+
+/* Propiedades definidas sobre las redes sociales que se encuentran en el menu */
+#container nav .redes{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+/* Color icono facebook */
+#container nav .redes .fb{
+  color: #253597;
+}
+
+/* Propiedades definidas sobre el div que contiene la informacion relevante de la pagina */
+#container .contenido-pag{
+  font-family: 'Bowlby One SC', cursive;
+  width: 100%;
+  margin-left: 25%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(130, 51, 122, 0.8),
+    rgba(91, 38, 85, 1)
+    );
+}
+
+/* Propiedades definidas sobre el contenido central de la pagina */
+#container .contenido-pag .imp-content{
+  width: 100%;
+  padding-top: 3%;
+  height: 100vh!important;
+}
+
+/* Propiedades definidas sobre los encabezados de las paginas */
+#container .contenido-pag .sec-noticias{
+  margin-left: 3%;
+  color: white;
+}
+
+/* Propiedades definidas sobre cada noticia de la pagina  */
+#container .contenido-pag .news {
+  background-color: rgb(88, 68, 144);
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  margin: 3%;
+  padding: 1%;
+  height: 25%;
+}
+
+/* Propiedades definidas sobre la imagen de las noticias */
+#container .contenido-pag .news .imagen-item{
+  float: left;
+  display: block;
+  background-size: cover;
+  left: 25%;
+  width: 30%;
+  height: 100%;
+}
+
+/* Propiedades definidas sobre el texto de la noticia */
+#container .contenido-pag .news .text-new{
+  margin-left: 3%;
+  float: left;
+  width: 65%;
+  font-family: 'Arial';
+}
+
+/* Propiedades definidas sobre la informacion de la noticia */
+#container .contenido-pag .news .text-new p{
+  padding-top: 4%;
+}
+
+/* Propiedades definidas sobre el fondo de la pagina */
+#container .contenido-pag .fondo{
+  font-family: 'Bowlby One SC', cursive;
+  text-align: center;
+  padding-top: 15%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(45, 87, 108, 0.3),
+      rgba(45, 87, 108, 0.3)
+    ),
+ url('img/fondo1.jpg');
+ background-repeat: no-repeat;
+}
+
+/* Propiedades definidas sobre la imagen del fondo de la pagina */
+#container .contenido-pag .fondo img{
+  height: 30%;
+  width: 22%;
+}
+
+/* Propiedades definidas sobre el texto del fondo de la pagina */
+.letra-pie{
+  color: #fff;
+  padding: 3%;
+  margin: 0% 4% 10% 4%;
+  width: 90%;
+  background-color: rgba(103, 35, 120, 0.4);
+  border-radius: 10px;
+}
+
+/* Propiedades definidas sobre el pie de pagina */
+#container .contenido-pag footer{
+  padding: 1%;
+  text-align: center;
+  font-family: 'Telex', sans-serif;
+  width: 100%!important;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Propiedades definidas sobre el contenido del footer */
+#container .contenido-pag footer .footer-content{
+  color: #ffffff;
+}
+
+/* Propiedades definidas sobre un ancla del bloque container de la pagina */
+#container a{
+  color: rgb(255, 4, 185);
+}
+
+/* Propiedades icono twitter */
+#container nav .redes .tw{
+  color: #588CCA;
+}
+
+/* Propiedades sobre el ancla de los iconos de las redes sociales */
+#container nav .redes a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 4px;
+  border-top-right-radius: 1em 5px;
+  border-top-left-radius: 1em 5px;
+}
+
+/* Propiedades de cada icono de las redes */
+#container nav .redes a i{
+  font-size: 20px;
+}
+
+/* Propiedades sobre cada opcion del menu */
+#container nav ul li{
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(225, 225, 225, 0.05);
+}
+
+/* Propiedades sobre la opcion seleccionada (Ej: Si nos encontramos en noticias, estara marcado de un color distinto al resto de las opciones del menu) */
+#container nav ul .active{
+background: linear-gradient(
+  rgb(162,39,135),
+  rgba(162, 39, 135, 0.59));
+}
+
+/* Propiedades sobre cada ancla de las opciones del menu */
+#container nav ul li a{
+  color: #dddddd;
+  display: block;
+}
+
+/* Propiedades definidas sobre cada icono del menu */
+#container nav ul li a .fas{
+  width: 20px;
+}
+
+/* Propiedades de cada opcion del menu (cuando se pasa mouse por encima) */
+#container nav ul li:hover{
+  Background: linear-gradient(
+    rgb(162,39,135),
+    rgba(162, 39, 135, 0.59));
+}
+
+/* Propiedades sobre cada ancla cuando se pasa el mouse sobre la opcion del menu */
+#container nav ul li a:hover{
+  color: #c2bebe;
+}
+
+/* Media query que permite indicar el tamaño de la pantalla luego de ciertos pixeles */
+@media screen and (max-width:860px){
+  #container nav{
+
+  }
+}
+
+/* Propiedades definidas sobre slider del carrusel */
+#container .contenido-pag .slider{
+  width: 80%;
+  height: 80%!important;
+  margin: auto;
+  background: linear-gradient(
+    rgba(130, 51, 122, 0.8),
+    rgba(91, 38, 85, 1)
+    );
+}
+
+/* Propiedades definidas sobre las imagenes de los juegos */
+.game{
+  position: absolute;
+  z-index:1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.7;
+  border-color:  rgb(255, 255, 255)!important;
+  border: solid;
+  border-radius: 10px;
+  }
+
+/* Propiedades definidas sobre el boton para jugar */
+.myBtn{
+  margin: auto;
+  z-index:2;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  color: white;
+  background: #b81471;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Propiedades definidas sobre el texto que hay sobre cada minijuego  */
+.game-text{
+  margin: 32% 10% 10% 10%!important;
+  position: absolute;
+  z-index:2;
+  color: #fff;
+  padding: 3%;
+  width: 80%;
+  background-color: rgba(103, 35, 120, 0.8);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Propiedades definidas sobre el contenido del carrusel */
+.carousel-container {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  justify-content: center;
+
+}
+
+/* Propiedades definidas sobre boton para avanzar o retroceder el carrusel */
+.prev, .next {
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posicion del boton next para la derecha */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Propiedades cuando se posiciona mouse sobre boton para avanzar y retroceder carrusel */
+.prev:hover, .next:hover {
+  background-color: purple;
+}
+
+/* Animacion de desvanecerse del carrusel */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Propiedades definidas sobre la secuencia de animacion de cada slide de los minijuegos (Para distintos tipos de navegadores, etiqueta -webkit-) */
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Propiedades definidas sobre la secuencia de animacion de cada slide de los minijuegos */
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Propiedades definidas sobre el modal (background) */
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 2; 
+  padding-top: 5%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+  text-align: center!important;
+  justify-content: center!important;
+}
+
+/* Propiedades definidas sobre el contenido del modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  height: 60%;
+  text-align: center!important;
+}
+
+/* Propiedades definidas sobre los iframes de la pagina */
+iframe{
+  height:100%!important;
+  width: 90%!important;
+}
+
+/* Propiedades definidas sobre el boton close del modal */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Efectos sobre el boton close del modal */
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
